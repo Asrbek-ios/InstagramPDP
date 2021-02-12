@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="InstagramPDP" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="xJE-6j-CgT" id="70J-tN-WM9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-aC-PLa">
-                    <rect key="frame" x="169" y="442" width="76" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xJE-6j-CgT">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="UQd-aC-PLa" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="JSW-NG-azD"/>
-                <constraint firstItem="UQd-aC-PLa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="nhr-lV-yrh"/>
+                <constraint firstItem="xJE-6j-CgT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bwx-e0-BJr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xJE-6j-CgT" secondAttribute="trailing" id="irX-Sg-SJz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xJE-6j-CgT" secondAttribute="bottom" id="wsT-Tz-a3V"/>
+                <constraint firstItem="xJE-6j-CgT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yce-0R-3pp"/>
             </constraints>
             <point key="canvasLocation" x="54" y="76"/>
         </view>
